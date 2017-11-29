@@ -21,9 +21,6 @@ Anyway, this is today's work
 ![Day 2](day2.png?raw=true)
 
 
-
-
-
 ### Conclusion
 I didn't hit my project goal for today i.e. I didn't finish to design the mockup. It took more than expected to be honest. One thing I noticed while working on it was that designing is kinda like programming in terms of energy demands. Creativity works in the same way as stamina, at least for me.
 Designers, what do you think? 

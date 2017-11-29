@@ -80,6 +80,14 @@ div {
     margin-bottom: 22px;
 }
 
-
-
+.intro {
+    background: lightgreen;
+}
+.main,    
+.supporting {
+    background: lightblue;
+}
+.sidebar {
+    background: yellow;
+}
 
