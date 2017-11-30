@@ -35,5 +35,10 @@ I asked for feedback on Slack and I was pleased to receive good critic despite t
 So it seems the bottom of the website, from "Benefits" till the end is not - as I suspected - designed well as it doesn't match the upper-half theme. Let's make it more delicious then! 
 
 
+Here it is
+![day 4](app/images/day4_1.png?raw=true)
+
+
+
 
 
