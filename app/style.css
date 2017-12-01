@@ -46,7 +46,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
 /* 
     ---------------------
     ---------------------
@@ -54,6 +53,9 @@ table {
     ---------------------
     ---------------------    
 */
+body {
+    font-family: 'Cabin Condensed', sans-serif;
+}
 h1 {
     font-size: 44px;
     font-weight: 800;
@@ -96,7 +98,6 @@ h3 {
     /* centers sections*/
     margin: 0 auto; 
     padding: 5%;
-    border: 2px solid black;
     overflow-x: hidden;
 }
 
@@ -109,19 +110,76 @@ h3 {
 */
 .intro {
     background-color: #F6EDCE;
+    overflow-y: hidden;
+    height: 1000vh;
+    padding-bottom: 20%;
 }
+header {
+    max-width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+/* "CSS Zen Garden" */
 h1 {
     color: #3A170D;
-    font-size: 2.5em;
+    font-size: 3em;
     text-decoration: underline;
+    margin-top: -4%;
+    margin-bottom: 3%;
+    text-align: center;
+    position: relative;
+    left: -4%;
 }
+/* "The Beauty of CSS Design" */
 h2 {
-    margin-top: 2%;
     color: #5C2F27;
-    font-family: 'Lobster', cursive;
-    font-size: 10em;
-    margin-bottom: 2%;
+    max-width: 100%;
+    font-size: 12em;
+    letter-spacing: 10px;
+    margin-bottom: 5%;
+    text-align: justify;
 }
+h2::after{
+    content: url(images/coffee-hot-cup.png);
+    margin-left: 3%;
+}
+h1,
+h2,
+.summary {
+    font-family: 'Lobster', cursive;
+}
+/* Subtitle */
+.summary {
+    letter-spacing: 1.2px;
+    color: #3A170D;
+    font-size: 1.4em;
+    line-height: 1.2;
+    letter-spacing: 1.8px;
+    font-weight: 800;
+    margin-bottom: 10%;
+}
+.preamble {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-around;
+    height: 100vh;
+}
+    
+
 
 
 

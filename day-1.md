@@ -9,7 +9,7 @@ This project is my humble attempt at the omonym challenge. The interesting part 
 * [official index.html](http://www.csszengarden.com), not to be edited
 * [MockFlow](): useful website to build mockups without having to use more complex programs. It's intuitve, no instructions needed :)
 
-## Day one 26/11/2017
+## Day 1 - Sunday 26/11/2017
 Today I start this new project after finishing [Magic: The Gathering card replica in HTML and CSS](https://github.com/davide2894/Magic-The-Gathering-card-in-HTML-and-CSS).
 
 I downloaded the offical index.html. Then I setup [Gulp](https://gulpjs.com), since this is not the first time I am using it I didn't need to congifure every task from scratch, I just copy-pasted the folder structure and the gulpfile.js from the [portfolio project](https://github.com/davide2894/portfolio).

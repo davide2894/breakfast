@@ -1,4 +1,4 @@
-## Day Three - 28/11/2017
+## Day 3 - Tuesday 28/11/2017
 Third day of the prohject. On the first day I basically set up everything I needed, then I started to design the website mockup. The following day I continued this very task knowing that the overall look is getting better. I did half of the page. The goal is the same as yesterday: finish to design the page. Let's go!
 
 The "Participation" and "Benefits" sections can go together as the latter has a particularly short text. Not sure a split screen visualization can be achieved. 

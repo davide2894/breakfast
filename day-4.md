@@ -1,4 +1,4 @@
-## Day Three - 29/11/2017
+## Day 3 - Wednesday 29/11/2017
 Another day has come, it's 5:19 AM. Clean face: check. Brush teeth: check. Coffee: check. Time to continue this project. 
 The first three days went well, except for the footer of the page whom I want to improve. Remember, I can't modify the index.html file of the project, not even in the slightest. 
 In the mentioned document I noticed that the "Resources" and "Archives" divs are both part of the same block like the following simple representation: 

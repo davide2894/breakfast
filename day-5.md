@@ -1,4 +1,4 @@
-## Day Five - Thursday 30/11/2017
+## Day 5 - Thursday 30/11/2017
 
 5:28 AM - today I can finally start to actually build the website. The goal for the week is to finish the project by Sunday night. Will I make it? We'll see. Let's do it!
 
