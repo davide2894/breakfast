@@ -56,6 +56,20 @@ table {
 body {
     font-family: 'Cabin Condensed', sans-serif;
 }
+.intro h1,
+.intro h2,
+.summary,
+.preamble h3 {
+    font-family: "Lobster", cursive;    
+}
+.intro h1,
+.summary {
+    color: #3a170d;
+}
+.intro h2,
+.preamble h3 {
+    color: #5C2F27;
+}
 h1 {
     font-size: 44px;
     font-weight: 800;
@@ -66,6 +80,8 @@ h2 {
 h3 {
     font-size: 28px;
 }
+
+
 
 /*
     --------------------
@@ -111,8 +127,8 @@ h3 {
 .intro {
     background-color: #F6EDCE;
     overflow-y: hidden;
-    height: 1000vh;
-    padding-bottom: 20%;
+    height: 297vh;
+    border-bottom: 60px solid #5C2F27;
 }
 header {
     max-width: 100vw;
@@ -128,37 +144,29 @@ header {
 }
 /* "CSS Zen Garden" */
 h1 {
-    color: #3A170D;
     font-size: 3em;
     text-decoration: underline;
     margin-top: -4%;
     margin-bottom: 3%;
-    text-align: center;
+    text-align: left;
     position: relative;
-    left: -4%;
+    left: 2%;
 }
 /* "The Beauty of CSS Design" */
 h2 {
-    color: #5C2F27;
     max-width: 100%;
     font-size: 12em;
     letter-spacing: 10px;
     margin-bottom: 5%;
-    text-align: justify;
 }
 h2::after{
     content: url(images/coffee-hot-cup.png);
     margin-left: 3%;
 }
-h1,
-h2,
-.summary {
-    font-family: 'Lobster', cursive;
-}
+
 /* Subtitle */
 .summary {
     letter-spacing: 1.2px;
-    color: #3A170D;
     font-size: 1.4em;
     line-height: 1.2;
     letter-spacing: 1.8px;
@@ -175,8 +183,47 @@ h2,
     flex-direction: column;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-around;
-    height: 100vh;
+    justify-content: space-between;
+    height: 200vh;
+}
+.preamble*> {
+    position: relative;
+}
+.preamble h3 {
+    font-size: 4em;
+    font-family: "Lobster", cursive;
+}
+.preamble p {
+    font-size: 1.5em;
+}
+.preamble h3 {
+    padding-left: 8%;
+}
+.preamble p:first-of-type {
+    padding-left: 15%;
+}
+.preamble p:first-of-type {
+    position: relative;
+    bottom: 12%;
+    width: 50%;
+}
+.preamble p:nth-child(3) {
+    position: relative;
+    bottom: 22%;
+    left: 40%;
+    width: 60%;
+}
+.preamble p:nth-child(4) {
+    position: relative;
+    bottom: 28%;
+    left: -2%;
+    width: 60%;
+}
+
+.preamble {
+    background-image: url(images/day7_1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
 }
     
 

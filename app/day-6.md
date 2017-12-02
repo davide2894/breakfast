@@ -31,5 +31,5 @@ Time to style the biggest part of the first section.
 This looks quite a tough one to do, I'm stuck at the CSS because I don't know how to render the mockup text alignment. Also, I'm still working on making that part of the mockup, the one with coffee beans going down the page, a background image. 
 
 Here's the result for today.
-//img
+![day6_1](app/images/day6_1.png?raw=true)
 
