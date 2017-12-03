@@ -1,4 +1,4 @@
-## Day 7 - Saturday 01/12/2017
+## Day 7 - Saturday 02/12/2017
 
 5:37 AM - seventh day for the project. I started yesterday to build the page. 
 
