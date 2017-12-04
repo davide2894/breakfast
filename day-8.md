@@ -55,9 +55,12 @@ To understand better the specific HTML structure involved I want to use good ol'
 *****************************************
 *****************************************
 
-And here's the work in progress
+Here's the work in progress
 *****************************************
 *****************************************
 ![html structure](app/imagses/day8_4.png?raw=true)
 *****************************************
 *****************************************
+
+For a more details check my the [commit to GitHub](https://github.com/davide2894/css-zen-garden/commit/feefd4c3ee005c021339b47b9967c14250494e9c)
+

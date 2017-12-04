@@ -40,7 +40,7 @@ blockquote, q {
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
-	content: none;
+	content:     none;
 }
 table {
 	border-collapse: collapse;
@@ -59,7 +59,10 @@ body {
 .intro h1,
 .intro h2,
 .summary,
-.preamble h3 {
+.preamble h3,
+.select,
+.archives,
+.resources {
     font-family: "Lobster", cursive;    
 }
 .intro h1,
@@ -102,8 +105,6 @@ h3 {
     flex-direction: column;
 }
 .intro,
-.main,
-.supporting,
 .sidebar {
     width: 90vw;
     height: auto;
@@ -113,9 +114,7 @@ h3 {
 .intro {
     background: lightgreen;
 }
-.main,    
-.supporting {
-    background: lightblue;
+.main {
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
@@ -125,6 +124,12 @@ h3 {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
+    width: 90vw;
+}
+.select,
+.archives,
+.resources {
+    color: #FDBA55;
 }
 
 /*
@@ -239,6 +244,13 @@ h2::after{
 
 
 
+
+
+
+
+
+
+
 /*
     ----------------------
     ----------------------
@@ -248,40 +260,152 @@ h2::after{
         * Resources
     ----------------------
     ----------------------
-*/
-.sidebar {
-    border: 10px solid blue;
-}
+*/ 
 .sidebar a {
     text-decoration: none;
     color: white;
 }
 .wrapper {
-    margin: 0 auto;
-    height: auto;
-    border: 2px solid yellow;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;  
+    -webkit-box-orient: horizontal;  
+    -webkit-box-direction: normal;  
+    -ms-flex-flow: row wrap;  
+    flex-flow: row wrap;
+    background: url(./images/donut.png) center/contain no-repeat;
+    margin-bottom: 10%;
+}
+.design-selection {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2 100%;
+    margin-bottom: 5%;
+}
+.design-selection > * 
+{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-flex flow: row;
-    -ms-flex flow: row wrap;
-    flex flow: row wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
-.wrapper > * {
-    border: 5px solid black;
+/* "Select a Design */
+.select {
+    font-size: 6em;
+    padding: 3%;
+    margin-bottom: 3%;
 }
-.design-selection {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 50%;
-    flex: 3 100%;
-    height: 80vh;
+.design-selection ul {
+    width: 28vw;
+    height: 48vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 2%;
+    background-color: #333;
+    border: 10px solid #fdba55;
+    border-radius: 6px;
+    margin-bottom: 5%;
 }
-.design-archives, 
+.design-selection ul,
+.design-archives ul,
+.zen-resources ul {
+    opacity: 0.8;
+}
+.design-selection li {
+    font-size: 1.3em;
+    color: #fff;
+    font-weight: 600;
+    margin-left: 10%;
+}
+.design-name{
+    margin-right: 1%;
+}
+.designer-name {
+    margin-left: 1%;
+}
+.design-archives,
 .zen-resources {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.design-archives > *,
+.zen-resources > * {
+    margin: 0 auto;
+}
+.archives,
+.resources {
+    font-size: 3em;
+    padding: 0 0 5% 0;
+}
+.design-archives ul,
+.zen-resources ul {
+    font-size: 1.5em;
+}
+.design-archives li:not(last-of-type),
+.zen-resources li:not(last-of-type) {
+    margin-bottom: 5%;
+    padding: 22px;
+    text-align: center;
+    -webkit-box-shadow: -2px 5px 2px #333;
+    box-shadow: 2px 5px 2px #;
+}
+.design-archives li,
+.zen-resources li {
+    background: #333333;
+    border: 5px solid #FDBA55;
+    border-radius: 6px;
+}
+.design-archives {
+    border-right: 2px solid #FDBA55;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+    ---------------------------
+    ---------------------------
+        MAIN:
+        * So what is this about
+        * Participation
+        * Benefits
+        * Requirements
+        * Footer w/buiscuits 
+    ---------------------------
+    ---------------------------
+*/
+.main > * {
+    margin-bottom: 20%;
+}
+.explanation {
+    width: 90vw;
+    margin: 0 auto;
     
 }
-
-
 
 
     
