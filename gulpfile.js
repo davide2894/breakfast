@@ -21,15 +21,15 @@ var browserSync = require("browser-sync").create();
 gulp.task("browserSync", function () {
     browserSync.init({
         server: {
-            baseDir: "app"
+            baseDir: ""
         }
     })
 });
 
 //and at each save inject new html, css, js into browser
 gulp.task("watch", ["browserSync"], function () {
-    gulp.watch("app/*.css", browserSync.reload);
-    gulp.watch("app/*.html", browserSync.reload);
+    gulp.watch("/*.css", browserSync.reload);
+    gulp.watch("/*.html", browserSync.reload);
 });
 
 //Optimization tasks
@@ -37,7 +37,7 @@ gulp.task("watch", ["browserSync"], function () {
 
 //Useref: minify and concatenate .js .css files
 gulp.task("useref", function () {
-    return gulp.src("app/*.html")
+    return gulp.src("/*.html")
         .pipe(useref())
         //minifies .js files
         .pipe(gulpIf("*.js", uglify()))
@@ -46,7 +46,7 @@ gulp.task("useref", function () {
 });
 
 gulp.task("cssUrl", function () {
-    gulp.src("app/css/style.css")
+    gulp.src("/css/style.css")
         .pipe(cssUrl({
             prepend: "/dist/"
         }))
@@ -56,7 +56,7 @@ gulp.task("cssUrl", function () {
 
 //minify images
 gulp.task("images", function () {
-    return gulp.src("app/images/**/*")
+    return gulp.src("/images/**/*")
         .pipe(imagemin({
             progressive: true,
             svgoPlugins: [{
@@ -72,7 +72,7 @@ gulp.task('cache:clear', function (callback) {
 })
 
 gulp.task("fonts", function () {
-    return gulp.src("app/fonts/**/*")
+    return gulp.src("/fonts/**/*")
         .pipe(gulp.dest("dist/fonts"))
 })
 
@@ -91,12 +91,7 @@ gulp.task("default", function (callback) {
 
 //create production website
 gulp.task("build", function (callback) {
-    runSequence(["sass", "useref", "images", "fonts"],
+    runSequence(["useref", "images", "fonts"],
         callback
     )
-});
-
-gulp.task("deploy", ["build"], function () {
-    return gulp.src("dist/**/*")
-        .pipe(deploy())
 });
