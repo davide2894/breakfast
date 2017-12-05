@@ -55,6 +55,7 @@ table {
 */
 body {
     font-family: 'Cabin Condensed', sans-serif;
+    overflow-x: hidden;
 }
 .intro h1,
 .intro h2,
@@ -62,7 +63,8 @@ body {
 .preamble h3,
 .select,
 .archives,
-.resources {
+.resources,
+.explanation h3{
     font-family: "Lobster", cursive;    
 }
 .intro h1,
@@ -70,8 +72,12 @@ body {
     color: #3a170d;
 }
 .intro h2,
-.preamble h3 {
+.preamble h3,
+.explanation h3 {
     color: #5C2F27;
+}
+.explanation p {
+    color: #F6EDCE;
 }
 h1 {
     font-size: 44px;
@@ -94,7 +100,7 @@ h3 {
     --------------------
 */
 .page-wrapper {
-    max-width: 100vw;
+    width: 100vw;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -104,12 +110,9 @@ h3 {
     -ms-flex-direction: column;
     flex-direction: column;
 }
-.intro,
-.sidebar {
-    width: 90vw;
-    height: auto;
-    padding: 5%;
+.page-wrapper > * {
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 .intro {
     background: lightgreen;
@@ -124,7 +127,6 @@ h3 {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
-    width: 90vw;
 }
 .select,
 .archives,
@@ -144,6 +146,7 @@ h3 {
     overflow-y: hidden;
     height: 677vh;
     border-bottom: 60px solid #5C2F27;
+    padding: 6%;
 }
 header {
     max-width: 100vw;
@@ -398,14 +401,61 @@ h2::after{
     ---------------------------
     ---------------------------
 */
-.main > * {
+.explanation,
+.participation,
+.benefits,
+.requirements,
+.footer {
     margin-bottom: 20%;
+    width: 100vw;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
 .explanation {
-    width: 90vw;
-    margin: 0 auto;
-    
+    background: #DAF7DC;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow-x: hidden;
+    padding: 16%;
 }
+.explanation > * {
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+.explanation h3 {
+    font-size: 5em;
+    margin-bottom: 2%;
+}
+.explanation p{
+    max-width: 50%;
+    background: #5C2F27;
+    font-size: 1.2em;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding: 0 2%;
+}
+.explanation p {
+    border: 25px outset #3a170d;
+}
+.explanation p:first-of-type {
+    padding-top: 2%;
+    border-bottom: hidden;
+    padding-bottom: 2%;
+}
+.explanation p:last-of-type {
+    padding-bottom: 2%; 
+    border-top: hidden;
+}
+
+
+
 
 
     

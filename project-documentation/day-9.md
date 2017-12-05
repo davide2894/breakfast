@@ -193,10 +193,9 @@ Last part for today. A donut background with a good amount of opacity (i.e. tran
 
 Unfortunately I couldn't make it work in either of these way. I wanted to persist though so after a few headaches I came to the most simple solution: edit the opacity in Gimp. Why do I overcomplicate things so much sometimes? :(
 
-This is the result of what I did today for this project!
+#### Website 
+The website is now published on GitHub Pages, feel free to check it out :D
+https://davide2894.github.io/css-zen-garden/
 
-///////////////////////////////////////////////////////
-
-
-
+#### Commit
 Lastly, be sure to check out [today's commit](https://github.com/davide2894/css-zen-garden/commit/6f10f6e462ee359e42f005d0f71e850b622af231) as well :D

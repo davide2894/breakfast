@@ -28,8 +28,8 @@ gulp.task("browserSync", function () {
 
 //and at each save inject new html, css, js into browser
 gulp.task("watch", ["browserSync"], function () {
-    gulp.watch("/*.css", browserSync.reload);
-    gulp.watch("/*.html", browserSync.reload);
+    gulp.watch("*.css", browserSync.reload);
+    gulp.watch("*.html", browserSync.reload);
 });
 
 //Optimization tasks
