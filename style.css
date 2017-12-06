@@ -194,7 +194,7 @@ h1 {
 /* "The Beauty of CSS Design" */
 h2 {
     font-size: 12em;
-    letter-spacing: 0px;
+    letter-spacing: 12px;
     padding: 1%;
 }
 h2::after{
