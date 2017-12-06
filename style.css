@@ -64,7 +64,11 @@ body {
 .select,
 .archives,
 .resources,
-.explanation h3{
+.explanation h3,
+.participation h3,
+.benefits,
+.requirements h3,
+footer {
     font-family: "Lobster", cursive;    
 }
 .intro h1,
@@ -78,6 +82,11 @@ body {
 }
 .explanation p {
     color: #F6EDCE;
+}
+.participation,
+.benefits,
+.requirements{
+    color: #333;
 }
 h1 {
     font-size: 44px;
@@ -133,7 +142,15 @@ h3 {
 .resources {
     color: #FDBA55;
 }
-
+.explanation,
+.participation,
+.benefits,
+.requirements,
+.footer {
+    width: 100vw;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 /*
     -----------------------
     -----------------------
@@ -264,6 +281,9 @@ h2::after{
     ----------------------
     ----------------------
 */ 
+.sidebar {
+    padding: 30% 0;   
+}
 .sidebar a {
     text-decoration: none;
     color: white;
@@ -390,27 +410,23 @@ h2::after{
 
 
 /*
-    ---------------------------
-    ---------------------------
+    ----------------------------
+    ----------------------------
         MAIN:
-        * So what is this about
+        * So what is this about?
         * Participation
         * Benefits
         * Requirements
         * Footer w/buiscuits 
-    ---------------------------
-    ---------------------------
+    ----------------------------
+    ----------------------------
 */
-.explanation,
-.participation,
-.benefits,
-.requirements,
-.footer {
-    margin-bottom: 20%;
-    width: 100vw;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
+/*
+    ----------------------
+    So what is this about?
+    ----------------------
+*/
 .explanation {
     background: #DAF7DC;
     display: -webkit-box;
@@ -421,14 +437,14 @@ h2::after{
     -ms-flex-direction: column;
     flex-direction: column;
     overflow-x: hidden;
-    padding: 16%;
+    padding: 50% 16%;
 }
 .explanation > * {
     -ms-flex-item-align: center;
     align-self: center;
 }
 .explanation h3 {
-    font-size: 5em;
+    font-size: 4em;
     margin-bottom: 2%;
 }
 .explanation p{
@@ -436,7 +452,7 @@ h2::after{
     background: #5C2F27;
     font-size: 1.2em;
     letter-spacing: 1.5px;
-    line-height: 1.5;
+    line-height: 1.4;
     font-weight: 600;
     margin-bottom: 0;
     padding: 0 2%;
@@ -454,8 +470,158 @@ h2::after{
     border-top: hidden;
 }
 
+/*
+    --------------------------
+        Participation
+    --------------------------
+
+*/
+.participation {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: url(images/cupcake.png) no-repeat 88% 80%;
+    background-color: #B6D5B3;
+}
+
+.participation>* {
+    max-width: 50%;
+    position: relative;
+    top: 5vh;
+    left: 15vh;
+    background: #FEBA55;
+    padding: 0 4%;
+    z-index: 1;
+    -webkit-box-shadow: 0 2px 2px 0px #333;
+    box-shadow: 0 2px 2px 0px #333; 
+}
+.participation h3 {
+    font-size: 8em;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.participation p {
+    font-size: 1.5em;
+    line-height: 1.38;
+    letter-spacing: 2px;
+    padding-bottom: .5%;
+}
+.participation p:last-of-type {
+    padding-bottom: 8%;
+}
 
 
+/*
+    -----------------------
+        Benefits
+    -----------------------
+*/
+.benefits {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 50% 20%;
+    background: url(./images/coffe-circle-stain.png) no-repeat 73% 63.4%; 
+    background-color: #FFEAC1;
+}
+.benefits>* {
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+.benefits h3 {
+    font-size: 10em;
+    letter-spacing: 10px;
+    margin-bottom: 10%;
+}
+.benefits p {
+    width: 75%;
+    font-size: 1.5em;
+    letter-spacing: 0.6px;
+    line-height: 1.5
+}
+
+/*
+    -------------------------
+        Requirements
+    -------------------------
+*/
+.requirements,
+footer {
+    background-color: #ffcdb2;
+}
+.requirements {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 20% 25%;
+}
+.requirements>* {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 100%;
+    flex: 1 100%;
+}
+.requirements h3 {
+    font-size: 12em;
+    -ms-flex-item-align: center;
+    align-self: center;
+    margin-bottom: 16%
+}
+.requirements p {
+    width: 146%;
+    -ms-flex-item-align: center;
+    align-self: center;
+    text-align: justify;
+    font-size: 2em;
+    line-height: 1.5;
+    letter-spacing: 2px;
+}
+.requirements p:nth-child(5) {
+    margin-bottom: 25%;
+}
+.requirements p:last-of-type {
+    border-top: 6px solid #333;
+    padding-top: 6%;
+}
+
+/*
+    --------------------------
+            Footer
+    --------------------------
+*/
+footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-around;
+    padding: 300% 20% 0 20%;
+    border: 1px solid black;
+}
+footer a {
+    text-decoration: none;
+    color: #333;
+    text-transform: lowercase;
+    font-size: 6em;
+
+}
+footer {
+    background: url(images/milk.png) bottom no-repeat;
+    background-color: #ffcdb2;
+}
 
 
     
