@@ -109,7 +109,7 @@ h3 {
     --------------------
 */
 .page-wrapper {
-    width: 100vw;
+    max-width: 100%;
     margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -122,9 +122,6 @@ h3 {
 .page-wrapper > * {
     overflow-x: hidden;
     overflow-y: hidden;
-}
-.intro {
-    background: lightgreen;
 }
 .main {
     -webkit-box-ordinal-group: 4;
@@ -162,12 +159,12 @@ h3 {
     background-color: #F6EDCE;
     overflow-y: hidden;
     height: 677vh;
-    max-width: 90vw;
+    max-width: 100%;
     border-bottom: 60px solid #5C2F27;
     padding: 6%;
 }
 header {
-    max-width: 100vw;
+    max-width: 100%;
     max-height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -190,12 +187,14 @@ h1 {
     position: relative;
     left: 2%;
 }
-
 /* "The Beauty of CSS Design" */
 h2 {
     font-size: 12em;
     letter-spacing: 12px;
     padding: 1%;
+}
+abbr {
+    text-decoration: none;
 }
 h2::after{
     content: url(images/coffee-hot-cup.png);
@@ -233,7 +232,7 @@ h2::after{
     font-family: "Lobster", cursive;
 }
 .preamble p {
-    font-size: 2.5em;
+    font-size: 2em;
 }
 .preamble h3 {
     position: relative;
@@ -387,11 +386,11 @@ h2::after{
 }
 .design-archives li:not(last-of-type),
 .zen-resources li:not(last-of-type) {
-    margin-bottom: 5%;
-    padding: 22px;
+    margin-bottom: 10%;
+    padding: 22PX;
     text-align: center;
     -webkit-box-shadow: -2px 5px 2px #333;
-    box-shadow: 2px 5px 2px #;
+    box-shadow: 1px 1px 5px 2px #333;
 }
 .design-archives li,
 .zen-resources li {
@@ -402,7 +401,9 @@ h2::after{
 .design-archives {
     border-right: 2px solid #FDBA55;
 }
-
+.design-archives li:first-of-type {
+    margin-bottom: 
+}
 
 
 
@@ -534,8 +535,10 @@ h2::after{
     -ms-flex-direction: column;
     flex-direction: column;
     padding: 50% 20%;
-    background: url(./images/coffe-circle-stain.png) no-repeat 73% 63.4%; 
+    background: url(./images/coffe-circle-stain.png) no-repeat 73% 63.4%;
     background-color: #FFEAC1;
+
+    
 }
 .benefits>* {
     -ms-flex-item-align: center;
@@ -554,14 +557,20 @@ h2::after{
 }
 
 /*
-    -------------------------
-        Requirements
-    -------------------------
+    ------------------------
+      Requirements + Footer
+    ------------------------
 */
 .requirements,
 footer {
     background-color: #ffcdb2;
 }
+
+/*
+    -------------------------
+        Requirements
+    -------------------------
+*/
 .requirements {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -570,7 +579,7 @@ footer {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 20% 25%;
+    padding: 25% 25% 10% 25%;
 }
 .requirements>* {
     -webkit-box-flex: 1;
@@ -578,17 +587,17 @@ footer {
     flex: 1 100%;
 }
 .requirements h3 {
-    font-size: 12em;
+    font-size: 10em;
     -ms-flex-item-align: center;
     align-self: center;
     margin-bottom: 16%
 }
 .requirements p {
-    width: 146%;
+    width: 120%;
     -ms-flex-item-align: center;
     align-self: center;
     text-align: justify;
-    font-size: 2em;
+    font-size: 1.5em;
     line-height: 1.5;
     letter-spacing: 2px;
 }
@@ -612,8 +621,7 @@ footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: space-around;
-    padding: 300% 20% 0 20%;
-    border: 1px solid black;
+    padding: 200% 20% 0 20%;
 }
 footer a {
     text-decoration: none;
@@ -623,9 +631,66 @@ footer a {
 
 }
 footer {
-    background: url(images/milk.png) bottom no-repeat;
+    background: url(images/footer-cookies-in-milk.png) bottom no-repeat;
     background-color: #ffcdb2;
 }
 
 
-    
+/*
+    ----------------------------
+    ----------------------------
+            LINKS
+    ----------------------------
+    ----------------------------
+*/
+.summary a {
+    color: #3a170d;
+}
+.summary a:hover {
+    color: black;
+}
+.design-selection li {
+    color: gray;
+}
+.design-selection a {
+    text-decoration: underline;
+}
+.design-selection a:hover,
+.design-archives a:hover,
+.zen-resources a:hover {
+    color: #FEBA55;
+    font-weight: 600;
+}
+.design-selection a:hover {
+    font-size: 1.05em;
+}
+.participation a {
+    color: #333;
+}
+.participation a:hover,
+.requirements a:hover,
+footer a:hover {
+    color: #000;
+    font-weight: 500;
+}
+.requirements a {
+    color: #333;   
+}
+
+.page-wrapper > a {
+    -webkit-transition: 0.1s easy-in-out;
+    transition: 0.1s easy-in-out;
+}
+
+
+/*
+    --------------------------------
+    --------------------------------
+            ANIMATIONS
+    --------------------------------
+    --------------------------------
+*/
+.page-wrapper > * {
+    -webkit-animation-name: slideUp;
+    animation-name: slideUp;
+}
