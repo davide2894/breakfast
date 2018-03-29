@@ -165,7 +165,7 @@ h3 {
 }
 header {
     max-width: 100%;
-    max-height: 100vh;
+    max-height: 80%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -183,7 +183,7 @@ h1 {
     text-decoration: underline;
     margin-top: -4%;
     margin-bottom: 3%;
-    text-align: left;
+    text-align: cent;
     position: relative;
     left: 2%;
 }
@@ -284,7 +284,7 @@ h2::after{
     ----------------------
 */ 
 .sidebar {
-    padding: 30% 0;   
+    padding: 20% 0;   
 }
 .sidebar a {
     text-decoration: none;
@@ -441,7 +441,7 @@ h2::after{
     -ms-flex-direction: column;
     flex-direction: column;
     overflow-x: hidden;
-    padding: 50% 16%;
+    padding: 30% 16%;
 }
 .explanation > * {
     -ms-flex-item-align: center;
@@ -681,15 +681,3 @@ footer a:hover {
     transition: 0.1s easy-in-out;
 }
 
-
-/*
-    --------------------------------
-    --------------------------------
-            ANIMATIONS
-    --------------------------------
-    --------------------------------
-*/
-.page-wrapper > * {
-    -webkit-animation-name: slideUp;
-    animation-name: slideUp;
-}
