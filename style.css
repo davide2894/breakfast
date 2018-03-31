@@ -3,63 +3,157 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content:     none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 /* 
     ---------------------
     ---------------------
-            FONT
+            FONTS
     ---------------------
     ---------------------    
 */
-body {
-    font-family: 'Cabin Condensed', sans-serif;
-    overflow-x: hidden;
-}
+
+/*
+    font-family: 'Lobster', cursive;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Arimo', sans-serif;
+*/
+
 .intro h1,
 .intro h2,
-.summary,
 .preamble h3,
 .select,
 .archives,
@@ -69,36 +163,58 @@ body {
 .benefits,
 .requirements h3,
 footer {
-    font-family: "Lobster", cursive;    
+    font-family: 'Lobster', cursive;
 }
+
+.benefits p,
+.summary > *,
+.preamble p,
+.design-selection,
+.design-archives > nav > ul > li,
+.zen-resources {
+    font-family: 'Cabin', sans-serif;
+}
+
+/*.explanation p,*/
+
+.participation p {
+    font-family: 'Lato', sans-serif;
+}
+
+/*
+    --------------------
+    --------------------
+        COLORS
+    --------------------
+    --------------------
+*/
+
 .intro h1,
 .summary {
     color: #3a170d;
 }
+
 .intro h2,
 .preamble h3,
 .explanation h3 {
     color: #5C2F27;
 }
+
 .explanation p {
     color: #F6EDCE;
 }
+
 .participation,
 .benefits,
-.requirements{
+.requirements {
     color: #333;
 }
-h1 {
-    font-size: 44px;
-    font-weight: 800;
-}
-h2 {
-    font-size: 36px;
-}
-h3 {
-    font-size: 28px;
-}
 
+.select,
+.archives,
+.resources {
+    color: #FDBA55;
+}
 
 
 /*
@@ -108,9 +224,8 @@ h3 {
     --------------------
     --------------------
 */
+
 .page-wrapper {
-    max-width: 100%;
-    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -119,35 +234,20 @@ h3 {
     -ms-flex-direction: column;
     flex-direction: column;
 }
-.page-wrapper > * {
-    overflow-x: hidden;
-    overflow-y: hidden;
-}
+
 .main {
     -webkit-box-ordinal-group: 4;
     -ms-flex-order: 3;
     order: 3;
 }
+
 .sidebar {
     background: #3a170d;
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
 }
-.select,
-.archives,
-.resources {
-    color: #FDBA55;
-}
-.explanation,
-.participation,
-.benefits,
-.requirements,
-.footer {
-    width: 100vw;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
 /*
     -----------------------
     -----------------------
@@ -155,14 +255,25 @@ h3 {
     -----------------------
     -----------------------
 */
+
 .intro {
     background-color: #F6EDCE;
     overflow-y: hidden;
-    height: 677vh;
     max-width: 100%;
-    border-bottom: 60px solid #5C2F27;
-    padding: 6%;
+    border-top: 3em solid #5C2F27;
+    border-bottom: 3em solid #5C2F27;
+    padding: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* flex-direction: column; */
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
 }
+
 header {
     max-width: 100%;
     max-height: 80%;
@@ -175,42 +286,66 @@ header {
     flex-direction: column;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    margin-top: 1%;
+    margin-top: 1em;
 }
-/* "CSS Zen Garden" */
+
 h1 {
-    font-size: 3em;
+    text-align: center;
+}
+
+/* "CSS Zen Garden" */
+
+h1 {
+    font-size: 1.5em;
+    font-weight: 600;
     text-decoration: underline;
-    margin-top: -4%;
-    margin-bottom: 3%;
-    text-align: cent;
-    position: relative;
-    left: 2%;
+    margin: 1em 0;
+    text-align: center;
 }
+
 /* "The Beauty of CSS Design" */
+
 h2 {
-    font-size: 12em;
-    letter-spacing: 12px;
-    padding: 1%;
+    font-size: 3em;
+    font-weight: 800;
+    text-align: center;
 }
+
+h2::after {
+    content: "";
+    display: inline-block;
+    width: 22%;
+    height: 1em;
+    background: url(images/coffee-cup.png) 70% 100% no-repeat;
+    background-size: 1em;
+}
+
 abbr {
     text-decoration: none;
 }
-h2::after{
-    content: url(images/coffee-hot-cup.png);
-    margin-left: 3%;
-}
 
 /* Subtitle */
-.summary {
-    margin-top: 2%;
-    letter-spacing: 1.2px;
-    font-size: 1.4em;
-    line-height: 1.2;
-    letter-spacing: 1.8px;
-    font-weight: 800;
-    padding-bottom: 1%;
+
+.summary,
+.preamble p {
+    font-size: 1.2em;
 }
+
+.summary {
+    margin: 2em auto 0 auto;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.summary::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 8em;
+    background: url(images/coffee-bea-hor-line.svg) center no-repeat;
+    background-size: 5em;
+}
+
 .preamble {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -222,55 +357,23 @@ h2::after{
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    height: 600vh;
+    background: url(images/day7_1.png) center center/contain no-repeat;
+    background-size: 1em;
 }
-.preamble*> {
-    position: relative;
-}
+
 .preamble h3 {
-    font-size: 7em;
-    font-family: "Lobster", cursive;
+    font-size: 2.5em;
+    text-align: center;
 }
+
 .preamble p {
-    font-size: 2em;
+    margin: 1em 1.5em;
+    color: #383838;
 }
-.preamble h3 {
-    position: relative;
-    padding-left: 8%;
-    top: 20%;
-}
+
 .preamble p:first-of-type {
-    padding-left: 15%;
+    margin: 1.5em;
 }
-.preamble p:first-of-type {
-    position: relative;
-    max-width: 80%;
-}
-.preamble p:nth-child(3) {
-    position: relative;
-    bottom: 20%;
-    left: 35%;
-    width: 50%;
-}
-.preamble p:nth-child(4) {
-    position: relative;
-    bottom: 35%;
-    width: 60%;
-}
-
-.preamble {
-    background-image: url(images/day8_0.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-
-
-
-
-
-
 
 
 /*
@@ -282,49 +385,45 @@ h2::after{
         * Resources
     ----------------------
     ----------------------
-*/ 
-.sidebar {
-    padding: 20% 0;   
-}
+*/
+
 .sidebar a {
     text-decoration: none;
     color: white;
 }
+
 .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;  
-    -webkit-box-orient: horizontal;  
-    -webkit-box-direction: normal;  
-    -ms-flex-flow: row wrap;  
-    flex-flow: row wrap;
-    background: url(./images/donut.png) center/contain no-repeat;
-    margin-bottom: 10%;
-}
-.design-selection {
-    -webkit-box-flex: 2;
-    -ms-flex: 2;
-    flex: 2 100%;
-    margin-bottom: 5%;
-}
-.design-selection > * 
-{
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 4em 0;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 4em auto;
+    padding: .5em;
 }
+
 /* "Select a Design */
-.select {
-    font-size: 6em;
-    padding: 3%;
-    margin-bottom: 3%;
+
+.design-archives,
+.zen-resources {
+    background: url(images/donut.png) center/contain no-repeat;
 }
+
+.design-selection {
+    opacity: 0.8;
+}
+
+.select {
+    font-size: 3em;
+    text-align: center;
+}
+
 .design-selection ul {
-    width: 28vw;
-    height: 48vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -334,34 +433,36 @@ h2::after{
     flex-direction: column;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    padding: 2%;
     background-color: #333;
     border: 10px solid #fdba55;
     border-radius: 6px;
-    margin-bottom: 5%;
+    margin-bottom: 2em;
+    padding: 2em;
 }
+
 .design-selection ul,
 .design-archives ul,
 .zen-resources ul {
     opacity: 0.8;
 }
+
 .design-selection li {
-    font-size: 1.3em;
     color: #fff;
     font-weight: 600;
-    margin-left: 10%;
+    margin: 1em 0;
+
 }
-.design-name{
+
+.design-name {
     margin-right: 1%;
 }
+
 .designer-name {
     margin-left: 1%;
 }
+
 .design-archives,
 .zen-resources {
-    -webkit-box-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -369,20 +470,26 @@ h2::after{
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    padding: 0 0.2em;
 }
+
+.select,
 .design-archives > *,
 .zen-resources > * {
     margin: 0 auto;
 }
+
 .archives,
 .resources {
+    margin-top: 1em;
     font-size: 3em;
-    padding: 0 0 5% 0;
 }
+
 .design-archives ul,
 .zen-resources ul {
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
+
 .design-archives li:not(last-of-type),
 .zen-resources li:not(last-of-type) {
     margin-bottom: 10%;
@@ -391,27 +498,17 @@ h2::after{
     -webkit-box-shadow: -2px 5px 2px #333;
     box-shadow: 1px 1px 5px 2px #333;
 }
+
 .design-archives li,
 .zen-resources li {
     background: #333333;
     border: 5px solid #FDBA55;
     border-radius: 6px;
 }
-.design-archives {
+
+/* .design-archives {
     border-right: 2px solid #FDBA55;
-}
-.design-archives li:first-of-type {
-    margin-bottom: 
-}
-
-
-
-
-
-
-
-
-
+} */
 
 /*
     ----------------------------
@@ -431,46 +528,40 @@ h2::after{
     So what is this about?
     ----------------------
 */
+
 .explanation {
     background: #DAF7DC;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    overflow-x: hidden;
-    padding: 30% 16%;
+    padding: 5em 0;
 }
-.explanation > * {
-    -ms-flex-item-align: center;
-    align-self: center;
-}
+
 .explanation h3 {
     font-size: 4em;
-    margin-bottom: 2%;
+    text-align: center;
+    font-weight: 800;
+    margin: 0 0 .5em 0;
 }
-.explanation p{
-    max-width: 50%;
+
+.explanation p {
     background: #5C2F27;
     font-size: 1.2em;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     line-height: 1.4;
-    font-weight: 600;
-    margin-bottom: 0;
-    padding: 0 2%;
+    font-weight: 300;
+    font-style: italic;
+    margin: 0 0.5em;
+    padding: 1em;
 }
+
 .explanation p {
-    border: 25px outset #3a170d;
+    border: 1em outset #3a170d;
 }
+
 .explanation p:first-of-type {
-    padding-top: 2%;
     border-bottom: hidden;
-    padding-bottom: 2%;
 }
+
 .explanation p:last-of-type {
-    padding-bottom: 2%; 
+    padding-bottom: 2%;
     border-top: hidden;
 }
 
@@ -478,10 +569,9 @@ h2::after{
     --------------------------
         Participation
     --------------------------
-
 */
+
 .participation {
-    height: 100vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -489,32 +579,33 @@ h2::after{
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    background: url(images/cupcake.png) no-repeat 88% 80%;
     background-color: #B6D5B3;
+    padding: 5em 0;
 }
 
-.participation>* {
-    max-width: 50%;
-    position: relative;
-    top: 5vh;
-    left: 15vh;
+.participation > * {
+    max-width: 95%;
+    margin: 0 auto;
     background: #FEBA55;
     padding: 0 4%;
     z-index: 1;
     -webkit-box-shadow: 0 2px 2px 0px #333;
-    box-shadow: 0 2px 2px 0px #333; 
+    box-shadow: 0 2px 2px 0px #333;
 }
+
 .participation h3 {
-    font-size: 8em;
+    font-size: 3em;
     padding-top: 4%;
     padding-bottom: 4%;
 }
+
 .participation p {
-    font-size: 1.5em;
-    line-height: 1.38;
-    letter-spacing: 2px;
-    padding-bottom: .5%;
+    font-size: 1.2em;
+    line-height: 1.1;
+    text-align: center;
+    padding: 1em;
 }
+
 .participation p:last-of-type {
     padding-bottom: 8%;
 }
@@ -525,6 +616,7 @@ h2::after{
         Benefits
     -----------------------
 */
+
 .benefits {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -533,26 +625,26 @@ h2::after{
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 50% 20%;
-    background: url(./images/coffe-circle-stain.png) no-repeat 73% 63.4%;
+    background: url(images/coffe-circle-stain.png) no-repeat 95% 65%;
+    background-size: 15em;
     background-color: #FFEAC1;
+    padding: 5em 0;
+    text-align: center;
+}
 
-    
-}
-.benefits>* {
-    -ms-flex-item-align: center;
-    align-self: center;
-}
 .benefits h3 {
-    font-size: 10em;
-    letter-spacing: 10px;
-    margin-bottom: 10%;
+    font-size: 5em;
+    font-weight: 700;
+    margin-bottom: .5em;
 }
+
 .benefits p {
-    width: 75%;
-    font-size: 1.5em;
-    letter-spacing: 0.6px;
-    line-height: 1.5
+    font-size: 1.2em;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    text-align: justify;
+    padding: 2em;
+
 }
 
 /*
@@ -560,6 +652,7 @@ h2::after{
       Requirements + Footer
     ------------------------
 */
+
 .requirements,
 footer {
     background-color: #ffcdb2;
@@ -570,6 +663,11 @@ footer {
         Requirements
     -------------------------
 */
+
+.requirements {
+    padding: 5em 2em 0 2em;
+}
+
 .requirements {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -578,34 +676,30 @@ footer {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 25% 25% 10% 25%;
 }
-.requirements>* {
+
+.requirements > * {
     -webkit-box-flex: 1;
     -ms-flex: 1 100%;
     flex: 1 100%;
 }
+
 .requirements h3 {
-    font-size: 10em;
+    font-size: 3.5em;
+    font-weight: 800;
     -ms-flex-item-align: center;
     align-self: center;
-    margin-bottom: 16%
 }
+
 .requirements p {
-    width: 120%;
-    -ms-flex-item-align: center;
-    align-self: center;
+    font-size: 1.3em;
+    margin-top: 1.5em;
     text-align: justify;
-    font-size: 1.5em;
-    line-height: 1.5;
-    letter-spacing: 2px;
 }
-.requirements p:nth-child(5) {
-    margin-bottom: 25%;
-}
+
 .requirements p:last-of-type {
     border-top: 6px solid #333;
-    padding-top: 6%;
+    padding-top: 1em;
 }
 
 /*
@@ -613,24 +707,37 @@ footer {
             Footer
     --------------------------
 */
+
 footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
-    padding: 200% 20% 0 20%;
 }
+
 footer a {
     text-decoration: none;
     color: #333;
     text-transform: lowercase;
-    font-size: 6em;
+    font-size: 2em;
 
 }
+
+footer::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 45em;
+    background: url(images/footer-cookies-in-milk.png) center no-repeat;
+    background-size: 20em;
+    margin-bottom: -2.6em;
+}
+
 footer {
-    background: url(images/footer-cookies-in-milk.png) bottom no-repeat;
+    padding: 1em 0 0 0;
     background-color: #ffcdb2;
 }
 
@@ -642,38 +749,46 @@ footer {
     ----------------------------
     ----------------------------
 */
+
 .summary a {
     color: #3a170d;
 }
+
 .summary a:hover {
     color: black;
 }
+
 .design-selection li {
     color: gray;
 }
+
 .design-selection a {
     text-decoration: underline;
 }
+
 .design-selection a:hover,
 .design-archives a:hover,
 .zen-resources a:hover {
     color: #FEBA55;
-    font-weight: 600;
 }
+
 .design-selection a:hover {
-    font-size: 1.05em;
+    //font-size: 1.05em;
 }
+
 .participation a {
     color: #333;
 }
+
 .participation a:hover,
 .requirements a:hover,
 footer a:hover {
     color: #000;
     font-weight: 500;
 }
+
 .requirements a {
-    color: #333;   
+    color: #333;
 }
 
 .page-wrapper > a {
@@ -681,3 +796,293 @@ footer a:hover {
     transition: 0.1s easy-in-out;
 }
 
+
+/*
+    --------------------
+    --------------------
+        MEDIA QUERIES
+    --------------------
+    --------------------
+*/
+
+@media screen and (min-width: 400px) {
+    h2 {
+        font-size: 4em;
+    }
+    .design-selection {
+        padding: 1em;
+    }
+    .design-selection ul {
+        padding: 2em 3em;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    h1 {
+        margin-top: 2em;
+    }
+    .preamble h3 {
+        font-size: 3em;
+    }
+    .preamble p:last-of-type {
+        margin-bottom: 4em;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .wrapper {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 530px) {
+    .preamble h3 {
+        font-size: 3.1em;
+    }
+
+    /* Participation */
+    .participation {
+        background: url(images/cupcake.png) no-repeat;
+        background-size: 150px;
+        background-position: 90% 80%;
+        background-color: #B6D5B3;
+        padding: 0;
+        height: 100vh;
+    }
+
+    .participation > * {
+        margin: 0;
+        max-width: 55%;
+        position: relative;
+        top: 10%;
+        left: 5%;
+        background: #FEBA55;
+        z-index: 2;
+        -webkit-box-shadow: 0 2px 2px 0px #333;
+        box-shadow: 0 2px 2px 0px #333;
+    }
+    .participation h3 {
+        font-size: 3em;
+    }
+    .participation p {
+        font-size: 1em;
+        text-align: unset;
+    }
+
+    .benefits h3 {
+        margin-top: 3em;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .intro {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    header,
+    .summary,
+    .preamble,
+    .benefits h3,
+    .benefits p,
+    .requirements h3,
+    .requirements p {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .explanation h3,
+    .explanation p {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .summary {
+        margin: 3em auto 0 auto;
+    }
+    .preamble h3 {
+        font-size: 3.5em;
+    }
+
+    .explanation h3 {
+        margin: 1em auto;
+    }
+    .explanation p:last-of-type {
+        margin-bottom: 4em;
+    }
+    
+    footer {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    footer a:not(:first-of-type):not(:last-of-type) {
+        margin: 0 1em;
+    }
+}
+
+@media screen and (min-width: 620px) {
+    .design-archives,
+    .zen-resources {
+        background: none;
+    }
+    .wrapper {
+        margin: 5em auto;
+        background: url(images/donut.png) center center/contain no-repeat;
+    }
+    .participation > * {
+        max-width: 380px;
+    }
+    .requirements h3 {
+        margin-top: 1.5em;
+    }
+    .requirements p:last-of-type {
+        margin-bottom: 1em;
+    }
+    .benefits h3 {
+        margin-top: 2em;
+    }
+    .benefits p {
+        margin-bottom: 6em;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .participation {
+        background: url(images/cupcake.png) no-repeat;
+        background-size: 150px;
+        background-position: 80% 80%;
+        background-color: #B6D5B3;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .participation h3,
+    .participation p {
+        max-width: 400px;
+        left: 15%;
+    }
+    .benefits {
+        background: url(images/coffe-circle-stain.png) no-repeat 90% 65%;
+        background-color: #FFEAC1;
+    }
+
+
+}
+
+@media screen and (min-width: 900px) {
+    .wrapper {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .design-selection {
+        -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+        order: 2;
+        margin: 0 2em;
+    }
+    .design-archives {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .zen-resources {
+        -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+        order: 3;
+    }
+
+    .participation {
+        background: url(images/cupcake.png) no-repeat;
+        background-size: 150px;
+        background-position: 70% 80%;
+        background-color: #B6D5B3;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .benefits {
+        background: url(images/coffe-circle-stain.png) no-repeat 80% 65%;
+        background-color: #FFEAC1;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .participation {
+        background: url(images/cupcake.png) no-repeat;
+        background-size: 300px;
+        background-position: 80% 68%;
+        background-color: #B6D5B3;
+    }
+    .participation h3,
+    .participation p {
+        left: 10%;
+        max-width: 50%;
+        padding: 1em;
+        margin: 0;
+    }
+    .participation p {
+        font-size: 1.5em;
+        border: none;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .wrapper,
+    .participation,
+    .benefits {
+        height: 100vh;
+    }
+    .wrapper > * {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .participation {
+        background: url(images/cupcake.png) no-repeat;
+        background-size: 300px;
+        background-position: 80% 68%;
+        background-color: #B6D5B3;
+    }
+    .participation h3,
+    .participation p {
+        left: 10%;
+        max-width: 50%;
+        padding: 1em;
+        margin: 0;
+    }
+    .participation p {
+        font-size: 1.5em;
+        border: none;
+    }
+    .benefits {
+        background: url(images/coffe-circle-stain.png) no-repeat 60% 65%;
+        background-color: #FFEAC1;
+    }
+    .benefits h3 {
+        font-size: 10em;
+        margin-top: 1em;
+    }
+    .benefits p {
+        font-size: 2em;
+    }
+
+}
+
+/* To use later
+@media screen and (min-width: px){
+    
+}
+*/
