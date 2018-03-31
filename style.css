@@ -316,7 +316,7 @@ h2::after {
     display: inline-block;
     width: 22%;
     height: 1em;
-    background: url(images/coffee-cup.png) 70% 100% no-repeat;
+    background: url(images/coffee-cup.webp) 70% 100% no-repeat;
     background-size: 1em;
 }
 
@@ -357,7 +357,6 @@ abbr {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    background: url(images/day7_1.png) center center/contain no-repeat;
     background-size: 1em;
 }
 
@@ -411,7 +410,7 @@ abbr {
 
 .design-archives,
 .zen-resources {
-    background: url(images/donut.png) center/contain no-repeat;
+    background: url(images/donut.webp) center/contain no-repeat;
 }
 
 .design-selection {
@@ -625,7 +624,7 @@ abbr {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    background: url(images/coffe-circle-stain.png) no-repeat 95% 65%;
+    background: url(images/coffe-circle-stain.webp) no-repeat 95% 65%;
     background-size: 15em;
     background-color: #FFEAC1;
     padding: 5em 0;
@@ -731,7 +730,7 @@ footer::before {
     display: block;
     width: 100%;
     height: 45em;
-    background: url(images/footer-cookies-in-milk.png) center no-repeat;
+    background: url(images/footer-cookies-in-milk.webp) center no-repeat;
     background-size: 20em;
     margin-bottom: -2.6em;
 }
@@ -848,7 +847,7 @@ footer a:hover {
 
     /* Participation */
     .participation {
-        background: url(images/cupcake.png) no-repeat;
+        background: url(images/cupcake.webp) no-repeat;
         background-size: 150px;
         background-position: 90% 80%;
         background-color: #B6D5B3;
@@ -939,7 +938,7 @@ footer a:hover {
     }
     .wrapper {
         margin: 5em auto;
-        background: url(images/donut.png) center center/contain no-repeat;
+        background: url(images/donut.webp) center center/contain no-repeat;
     }
     .participation > * {
         max-width: 380px;
@@ -960,7 +959,7 @@ footer a:hover {
 
 @media screen and (min-width: 700px) {
     .participation {
-        background: url(images/cupcake.png) no-repeat;
+        background: url(images/cupcake.webp) no-repeat;
         background-size: 150px;
         background-position: 80% 80%;
         background-color: #B6D5B3;
@@ -974,7 +973,7 @@ footer a:hover {
         left: 15%;
     }
     .benefits {
-        background: url(images/coffe-circle-stain.png) no-repeat 90% 65%;
+        background: url(images/coffe-circle-stain.webp) no-repeat 90% 65%;
         background-color: #FFEAC1;
     }
 
@@ -1005,7 +1004,7 @@ footer a:hover {
     }
 
     .participation {
-        background: url(images/cupcake.png) no-repeat;
+        background: url(images/cupcake.webp) no-repeat;
         background-size: 150px;
         background-position: 70% 80%;
         background-color: #B6D5B3;
@@ -1014,14 +1013,14 @@ footer a:hover {
 
 @media screen and (min-width: 1000px) {
     .benefits {
-        background: url(images/coffe-circle-stain.png) no-repeat 80% 65%;
+        background: url(images/coffe-circle-stain.webp) no-repeat 80% 65%;
         background-color: #FFEAC1;
     }
 }
 
 @media screen and (min-width: 1100px) {
     .participation {
-        background: url(images/cupcake.png) no-repeat;
+        background: url(images/cupcake.webp) no-repeat;
         background-size: 300px;
         background-position: 80% 68%;
         background-color: #B6D5B3;
@@ -1051,7 +1050,7 @@ footer a:hover {
     }
 
     .participation {
-        background: url(images/cupcake.png) no-repeat;
+        background: url(images/cupcake.webp) no-repeat;
         background-size: 300px;
         background-position: 80% 68%;
         background-color: #B6D5B3;
@@ -1068,7 +1067,7 @@ footer a:hover {
         border: none;
     }
     .benefits {
-        background: url(images/coffe-circle-stain.png) no-repeat 60% 65%;
+        background: url(images/coffe-circle-stain.webp) no-repeat 60% 65%;
         background-color: #FFEAC1;
     }
     .benefits h3 {
