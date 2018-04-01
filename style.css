@@ -937,7 +937,7 @@ footer a:hover {
         background: none;
     }
     .wrapper {
-        margin: 5em auto;
+        margin: 8em auto;
         background: url(images/donut.webp) center center/contain no-repeat;
     }
     .participation > * {
@@ -1021,19 +1021,20 @@ footer a:hover {
 @media screen and (min-width: 1100px) {
     .participation {
         background: url(images/cupcake.webp) no-repeat;
-        background-size: 300px;
+        background-size: 200px;
         background-position: 80% 68%;
         background-color: #B6D5B3;
     }
+
     .participation h3,
     .participation p {
         left: 10%;
-        max-width: 50%;
+        max-width: 40%;
         padding: 1em;
         margin: 0;
     }
     .participation p {
-        font-size: 1.5em;
+        font-size: 1.2em;
         border: none;
     }
 }
@@ -1051,14 +1052,14 @@ footer a:hover {
 
     .participation {
         background: url(images/cupcake.webp) no-repeat;
-        background-size: 300px;
+        background-size: 200px;
         background-position: 80% 68%;
         background-color: #B6D5B3;
     }
     .participation h3,
     .participation p {
         left: 10%;
-        max-width: 50%;
+        width: 35%;
         padding: 1em;
         margin: 0;
     }
@@ -1072,7 +1073,7 @@ footer a:hover {
     }
     .benefits h3 {
         font-size: 10em;
-        margin-top: 1em;
+        margin-top: 3em;
     }
     .benefits p {
         font-size: 2em;
